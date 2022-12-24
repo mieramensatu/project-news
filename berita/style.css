@@ -1,0 +1,23 @@
+.navbar{
+    top: 0;
+    position: sticky;
+    position: -webkit-sticky;
+}
+.navbar-brand img{
+    width: 80px;
+}
+.navbar-brand{
+    margin-right: 0;
+    padding: 0 1em;
+}
+.navbar-nav{
+    align-items: center;
+}
+.navbar .navbar-nav .nav-link{
+    color: #ffffff;
+    font-size: 1.1em;
+    padding: 0 1em;
+}
+.nav-item:hover{
+    background-color: grey;
+}
