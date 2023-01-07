@@ -1,9 +1,14 @@
 <?php
+include_once('../inc/fungsi.php');
+
 session_start();
 
-//logout manual
-session_destroy();
-include("../inc/koneksi.php");
+if(isset($_GET["keluar"]) && $_GET["keluar"]=='yes'){
+	session_destroy();
+	header('Location:index.php');
+}
+
+include_once("../inc/koneksi.php");
 
 if (isset($_POST["submit"] ) ) {
 	
@@ -52,22 +57,36 @@ if(empty($_SESSION["loginadmin"]))
 	<link rel="stylesheet" type="text/css" href="../assets/style.css">
 </head>
 <body>
-    <div class="language">
-        <div class="logo">
 
-        </div>
-        <form action="" method="POST">
-            <label>Username</label>
-            <input type="text" name="username" placeholder="username">
+<div class="w20 fn loginpage">
+	<div class="logo">
 
-            <label>Password</label>
-            <input type="password" name="password">
+		<img src="../image/logo.png">
+		
+	</div>
 
-            <input type="submit" name="submit" value="login">
-    </div>
+	<div class="clear pd5"></div>
+	
+	<form action="" method="POST">
+		<div class="user">
+			<label>Username</label><br>
+			<input type="text" name="username" placeholder="Username" class="form100">
+		</div>
+
+		<div class="user">
+			<label>Password</label><br>
+			<input type="password" name="password" class="form100">
+		</div>
+
+		<input type="submit" name="submit" value="Login">
+
+	</form>
+
+</div>
+
 </body>
 </html>
-<?php
+<?php 
 exit;
 }
-?>
+ ?>

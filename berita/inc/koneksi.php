@@ -5,6 +5,10 @@ define('DBPASS', '');
 define('DBNAME', 'pb');
 
 define('URL_SITUS', 'http://localhost/portalberita/');
+define('PATH_LOGO', 'image');
+define('PATH_GAMBAR', 'photo');
+define('FILE_LOGO', 'logo.png');
+define('FILE_ICON', 'icon.png');
 
 $connect = mysqli_connect(DBHOST, DBUSER, DBPASS, DBNAME);
 
