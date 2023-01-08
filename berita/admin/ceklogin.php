@@ -61,7 +61,7 @@ if(empty($_SESSION["loginadmin"]))
 <div class="w20 fn loginpage">
 	<div class="logo">
 
-		<img src="../image/logo.png">
+		<img src="<?= URL_SITUS . PATH_LOGO . '/' . FILE_LOGO;?>">
 		
 	</div>
 
@@ -75,7 +75,7 @@ if(empty($_SESSION["loginadmin"]))
 
 		<div class="user">
 			<label>Password</label><br>
-			<input type="password" name="password" class="form100">
+			<input type="password" name="password" placeholder="Password" class="form100">
 		</div>
 
 		<input type="submit" name="submit" value="Login">

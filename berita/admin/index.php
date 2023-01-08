@@ -5,8 +5,25 @@ include("ceklogin.php")
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Administrator</title>
+	<title>Administrator - <?=getprofilweb('site_title')?></title>
+	<meta name="description" content="<?=getprofilweb('meta_desc')?>">
+	<meta name="keywords" content="<?=getprofilweb('meta_key')?>">
     <link rel="stylesheet" type="text/css" href="../assets/style.css">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote-lite.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote-lite.js"></script>
+
+	<script>
+    	$(document).ready(function() {
+		  $('.summernote').summernote({
+
+	        tabsize: 2,
+	        height: 300
+		  });
+		});
+
+    </script>
 </head>
 <body>
     <div class="wrap shadow mt10 mb10 border">

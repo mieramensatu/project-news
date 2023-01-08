@@ -30,7 +30,7 @@ if (isset($_POST['edituser'])) {
 
 	$sql = mysqli_query($connect, "UPDATE administrator SET username='".$username."', Nama ='".$_POST['nama']."', email='".$_POST['email']."' WHERE ID = '".$_POST['userid']."' ");
 
-	$error = "Data user admin berhasil diperbaharui";
+	$error = "Data user admin berhasil diperbarui";
 
 	}
 
