@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title><?php echo $title ?></title>
-  <link rel="shortcut icon" type="image/png" href="<?php echo base_url() ?>/assets/images/icon-javawebmedia.png">
+  <link rel="shortcut icon" type="image/png" href="<?php echo base_url() ?>/assets/images/logo.png">
   <!-- CSS BOOTSTRAP -->
   <link rel="stylesheet" href="<?php echo base_url() ?>/assets/bootstrap/css/bootstrap.min.css">
   <!-- CSS JAVA WEB MEDIA -->
